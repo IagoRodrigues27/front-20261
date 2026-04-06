@@ -8,8 +8,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
   
-    --cor-primaria: red;
-    --cor-secundaria: grey;
+    --cor-primaria: #ff0000;
+    --cor-secundaria: #ddd;
   }
   
   body {
@@ -82,4 +82,3 @@
       border: 1px solid var(--cor-primaria);
     }
   }
-  
