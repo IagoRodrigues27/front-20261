@@ -4,7 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 
 
 function Menu() {
-
+const usuarioId = 0;
     const { logout, usuario } = useAuth();
     const handleSair = (e) => {
         e.preventDefault();
@@ -19,7 +19,7 @@ function Menu() {
                 <li><NavLink to={`/perfil/${usuarioId}`}>Perfil</NavLink></li>
                 <li><NavLink to="/settings">Configurações</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
-                <li><Link to="/Login">Sair</Link></li>
+                <li><a href="#"onClick ={handleSair}>Sair</a></li>
             </ul>
         </nav>
     )

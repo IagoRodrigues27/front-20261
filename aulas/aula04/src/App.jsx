@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { Routes, Route } from "react-router";
 import { useAuth } from "./contexts/AuthContext";
 import Layout from "./layouts/Layout";
@@ -10,7 +9,7 @@ import Perfil from "./pages/Perfil";
 import Settings from "./pages/Settings";
 
 function App() {
-  const { logado } = useContext(AuthContext);
+  const { logado } = useAuth();
   return (
     <Routes>
       {logado ? (
